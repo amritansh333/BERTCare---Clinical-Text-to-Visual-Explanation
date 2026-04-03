@@ -1,1 +1,1 @@
-# BERTCare---Clinical-Text-to-Visual-Explanation
+# BERTCare: Clinical-Text-to-Visual-Explanation
