@@ -1,0 +1,160 @@
+@import "tailwindcss";
+
+:root {
+  --background: 39 12% 91%; /* #EAE8E3 */
+  --foreground: 0 0% 0%; /* Black for basic text */
+  --maroon: 351 77% 22%; /* #630D16 - Maroon */
+  --card: 39 12% 91%;
+  --card-foreground: 0 0% 0%;
+  --popover: 39 12% 91%;
+  --popover-foreground: 351 77% 22%;
+  --primary: 351 77% 22%; /* Maroon */
+  --primary-foreground: 39 12% 95%; /* Cream White */
+  --secondary: 0 0% 8%; /* Dark Obsidian #131313 */
+  --secondary-foreground: 39 12% 91%;
+  --muted: 39 12% 85%;
+  --muted-foreground: 0 0% 0% / 0.6;
+  --accent: 351 77% 22%;
+  --accent-foreground: 39 12% 95%;
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 0 0% 0% / 0.1; /* Subtler borders */
+  --input: 39 12% 85%;
+  --ring: 351 77% 22%;
+  --radius: 0.125rem; /* Slight rounding for simplicity */
+}
+
+.dark {
+  --background: 0 0% 0%; /* Pure Black for simplicity */
+  --foreground: 39 12% 91%; /* Cream */
+  --card: 0 0% 2%;
+  --card-foreground: 39 12% 91%;
+  --popover: 0 0% 0%;
+  --popover-foreground: 39 12% 91%;
+  --primary: 39 12% 91%;
+  --primary-foreground: 0 0% 0%;
+  --secondary: 351 77% 22%; /* Maroon */
+  --secondary-foreground: 39 12% 91%;
+  --muted: 0 0% 10%;
+  --muted-foreground: 39 12% 70%;
+  --accent: 351 77% 22%;
+  --accent-foreground: 39 12% 91%;
+  --destructive: 0 62% 30%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 39 12% 20%;
+  --input: 0 0% 10%;
+  --ring: 39 12% 91%;
+}
+
+@theme {
+  --font-inter: "Inter", var(--font-sans);
+  --font-inter-tight: "Inter Tight", var(--font-sans);
+  
+  --color-background: hsl(var(--background));
+  --color-foreground: hsl(var(--foreground));
+  --color-maroon: hsl(var(--maroon));
+  --color-card: hsl(var(--card));
+  --color-card-foreground: hsl(var(--card-foreground));
+  --color-primary: hsl(var(--primary));
+  --color-primary-foreground: hsl(var(--primary-foreground));
+  --color-secondary: hsl(var(--secondary));
+  --color-secondary-foreground: hsl(var(--secondary-foreground));
+  --color-accent: hsl(var(--accent));
+  --color-accent-foreground: hsl(var(--accent-foreground));
+  --color-border: hsl(var(--border));
+  --color-input: hsl(var(--input));
+  --color-ring: hsl(var(--ring));
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+    font-style: normal !important;
+  }
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-inter);
+    font-size: 0.95rem; /* Larger font size */
+    line-height: 1.7; /* Better readability */
+    transition: background-color 0.4s ease, color 0.4s ease;
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: 0.01em; /* Normal spacing */
+  }
+  h1, h2, h3, h4, .waverly-title {
+    font-family: var(--font-inter-tight);
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.02em; /* Less tight */
+    line-height: 1.2;
+  }
+}
+
+/* User Input specific */
+.user-input-text {
+  font-family: var(--font-inter);
+  color: black !important;
+  font-weight: 400;
+  letter-spacing: normal;
+  text-transform: none !important;
+}
+
+.text-black-data {
+  color: black !important;
+}
+
+.waverly-divider-v {
+  width: 1px;
+  background-color: currentColor;
+  opacity: 0.1;
+}
+
+.waverly-divider-h {
+  height: 1px;
+  width: 100%;
+  background-color: currentColor;
+  opacity: 0.1;
+}
+
+.waverly-button {
+  background: var(--color-primary);
+  color: var(--color-primary-foreground);
+  padding: 1rem 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  letter-spacing: 0.05em;
+  border-radius: 0.25rem;
+  transition: all 0.2s ease;
+}
+
+.waverly-button:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+.no-italic {
+  font-style: normal !important;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-primary);
+  border-radius: 10px;
+}
+
+@layer utilities {
+  .tracking-normal {
+    letter-spacing: 0.01em;
+  }
+  .tracking-relaxed {
+    letter-spacing: 0.05em;
+  }
+}
