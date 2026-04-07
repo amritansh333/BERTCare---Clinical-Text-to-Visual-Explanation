@@ -1,1 +1,1 @@
-# MedCare: Clinical-Text-to-Visual-Explanation
+# MediCare-AI: Clinical-Text-to-Visual-Explanation

@@ -37,20 +37,27 @@ export function Hero() {
              </h3>
              
              <div className="flex flex-col lg:flex-row lg:items-end gap-16 w-full pt-12 border-t border-foreground/10 pb-12">
-                <p className="text-xl font-bold text-foreground/40 max-w-sm leading-tight tracking-[0.1em] italic no-italic">
-                   MediCare.ai helps you decode medical reports into simple language.
-                </p>
+               
+
 
                 <div className="flex flex-col space-y-2 border-l border-foreground/10 pl-12">
-                   <div className="text-4xl font-black text-primary tracking-tighter">97%</div>
-                   <div className="text-[10px] font-black tracking-[0.2em] text-foreground/40">Interpretation Accuracy</div>
+                   <div className="text-4xl font-black text-primary tracking-tighter">01.</div>
+                   <div className="text-[18px] font-black tracking-[0.1em] text-foreground/40">MediCare.ai helps you decode medical reports into simple language with animation.</div>
                 </div>
+
+                <div className="flex flex-col space-y-2 border-l border-foreground/10 pl-12">
+                   <div className="text-4xl font-black text-primary tracking-tighter">02.</div>
+                   <div className="text-[18px] font-black tracking-[0.1em] text-foreground/40">97% Interpretation Accuracy for processing animation videos that is trusted by over 50+ people.</div>
+                </div>
+
+                <div className="flex flex-col space-y-2 border-l border-foreground/10 pl-12">
+                   <div className="text-4xl font-black text-primary tracking-tighter">03.</div>
+                   <div className="text-[18px] font-black tracking-[0.1em] text-foreground/40">No complex terms, no confusion — just clear insights, explanations, and guidance powered by AI.</div>
+                </div>
+
+
                 
-                <div className="flex flex-col space-y-2 border-l border-foreground/10 pl-12 pr-12">
-                   <p className="text-xl font-bold text-foreground/40 max-w-sm leading-tight tracking-[0.1em] italic no-italic">
-                   No complex terms, no confusion — just clear insights, explanations, and guidance powered by AI.
-                </p>
-                </div>
+                
              </div>
 
              <Link
@@ -69,14 +76,26 @@ export function Hero() {
             transition={{ duration: 1.2 }}
             className="relative h-[800px]  flex items-center justify-center"
           >
-            <Image
-              src="/bot1.png"
-              alt="AI Medical Assistant"
-              width={500}
-              height={500}
-              className="object-contain"
-              priority
-            />
+            <motion.div
+  animate={{ 
+    scale: [1, 1.03, 1],
+    y: [0, -10, 0]
+  }}
+  transition={{
+    duration: 4,
+    repeat: Infinity,
+    ease: [0.42, 0, 0.58, 1]
+  }}
+>
+  <Image
+    src="/medicareBot.png"
+    alt="AI Medical Assistant"
+    width={800}
+    height={800}
+    className="object-contain"
+    priority
+  />
+</motion.div>
           </motion.div>
         </div>
       </div>

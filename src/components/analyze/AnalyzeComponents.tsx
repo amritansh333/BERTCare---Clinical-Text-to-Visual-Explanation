@@ -34,7 +34,7 @@ export function AnalyzeForm({ onResult, onLoading, onPromptText }: { onResult: (
       const data = await response.json();
       
       const elapsed = Date.now() - start;
-      const targetDelay = 5500; // 5.5 seconds for "Proper" clinical feel
+      const targetDelay = 35000;
 
       if (elapsed < targetDelay) {
          await new Promise(resolve => setTimeout(resolve, targetDelay - elapsed));
@@ -143,7 +143,8 @@ export function SkeletonLoader() {
 
        <div className="flex flex-col items-center py-10 opacity-100">
           <Activity className="w-12 h-12 text-primary animate-bounce" />
-          <p className="text-[12px] font-bold text-primary   tracking-[0.5em] mt-6">Deep Context Synthesis in Progress...</p>
+          <p className="text-[12px] font-bold text-primary   tracking-[0.5em] mt-6">Analyzing your report and generating visual content.</p>
+          <p className="text-[12px] font-bold text-primary   tracking-[0.5em] mt-6">This may take a few seconds...</p>
        </div>
     </div>
   );
@@ -211,7 +212,7 @@ export function ResultDisplay({ result, promptText }: { result: AnalysisResult, 
                          Management Protocol
                       </h4>
                       <div className="grid gap-3">
-                         {result.medication.map((m, i) => (
+                         {result?.medication?.map((m, i) => (
                             <div key={i} className="flex items-center justify-between p-5 bg-slate-50 border border-slate-100 rounded">
                                <span className="text-[14px] font-black text-black   tracking-tight">{m.name}</span>
                                <span className="text-[12px] font-bold text-slate-400  ">{m.dosage}</span>
@@ -228,7 +229,7 @@ export function ResultDisplay({ result, promptText }: { result: AnalysisResult, 
                          Clinical Precautions
                       </h4>
                       <div className="space-y-3">
-                          {result.precautions.map((p, i) => (
+                          {result?.precautions?.map((p, i) => (
                             <div key={i} className="text-[14px] font-bold text-black p-5 bg-red-50/30 border border-red-100 border-l-4 leading-relaxed rounded-r-md">
                                {p}
                             </div>

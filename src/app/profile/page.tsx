@@ -7,7 +7,7 @@ import Link from 'next/link';
 export default function ProfilePage() {
   const user = {
     name: 'Jane Cooper',
-    email: 'jane.cooper@medcare.ai',
+    email: 'jane.cooper@medicare.ai',
     id: 'MC-72948-AX',
     reportsAnalysed: 24,
     status: 'Verified Patient',
@@ -133,7 +133,7 @@ export default function ProfilePage() {
               <div className="p-16 rounded-[80px] bg-primary relative overflow-hidden shadow-3xl text-center md:text-left flex flex-col md:flex-row items-center justify-between gap-10">
                  <div className="absolute inset-0 bg-grid-white/[0.05] pointer-events-none" />
                  <div className="space-y-4">
-                    <h3 className="text-4xl font-black italic tracking-tighter   text-white leading-none italic">MedCare Plus <br /><span className="text-indigo-200">Expansion Ready</span></h3>
+                    <h3 className="text-4xl font-black italic tracking-tighter   text-white leading-none italic">MediCare Plus <br /><span className="text-indigo-200">Expansion Ready</span></h3>
                     <p className="text-white/60 font-black tracking-widest   italic text-sm">Scale your health understanding with premium data tiers.</p>
                  </div>
                  <button className="bg-white text-black px-12 py-6 rounded-[30px] font-black italic   tracking-tighter shadow-2xl hover:scale-105 active:scale-95 transition-all">Upgrade Portal Access</button>

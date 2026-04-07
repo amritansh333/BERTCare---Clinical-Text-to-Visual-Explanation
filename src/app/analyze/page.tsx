@@ -23,7 +23,7 @@ export default function AnalyzePage() {
            >
               <span>Analyze Your Medical Reports Here!</span>
            </motion.div>
-           <h1 className="text-4xl md:text-6xl font-black mb-8 leading-tight   text-maroon">MEDCARE <br />ANALYSIS PORTAL</h1>
+           <h1 className="text-4xl md:text-6xl font-black mb-8 leading-tight uppercase  text-maroon">MediCare-ai <br />Analysis Portal</h1>
            <p className="text-[16px] text-foreground/40 max-w-2xl mx-auto font-medium leading-relaxed mb-12 tracking-wide opacity-80">
              Paste your symptoms or upload your medical report to receive AI-driven insights, explanations, and guided recommendations.
            </p>

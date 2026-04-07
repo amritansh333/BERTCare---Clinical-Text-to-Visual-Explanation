@@ -77,7 +77,7 @@ export default function SignupPage() {
 
                     <div className="flex items-center space-x-3 px-6 text-[10px] font-black italic   tracking-widest text-foreground/40 leading-relaxed mb-10 select-none">
                        <div className="w-4 h-4 rounded border border-primary/40 bg-primary/10 shrink-0" />
-                       <p>I agree to the high-level security protocol and clinical data privacy acts under MedCare guidelines.</p>
+                       <p>I agree to the high-level security protocol and clinical data privacy acts under MediCare guidelines.</p>
                     </div>
 
                     <button className="w-full py-7 rounded-[40px] bg-secondary text-white font-black text-2xl   italic tracking-tighter shadow-3xl hover:bg-secondary/90 active:scale-95 transition-all flex items-center justify-center space-x-4 border-t-2 border-white/20">

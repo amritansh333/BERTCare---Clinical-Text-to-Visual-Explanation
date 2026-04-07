@@ -62,7 +62,7 @@ export default function Footer() {
 
         <div className="mt-4 pt-16 border-t border-foreground/10 flex flex-col md:flex-row justify-between items-center gap-10 font-inter-tight font-black   tracking-widest text-[10px] text-foreground/20">
            <div className="flex items-center space-x-12">
-              <span>© 2026 MEDCARE — SYSTEMIC CLINICAL ANALYTICS</span>
+              <span>© 2026 MediCare.ai - Clinical Text To Visual Explainer</span>
               <div className="hidden md:flex space-x-6 text-primary">
                  <MonitorCheck className="w-4 h-4 cursor-pointer hover:opacity-50" />
                  <Globe className="w-4 h-4 cursor-pointer hover:opacity-50" />

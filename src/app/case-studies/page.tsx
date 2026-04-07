@@ -8,23 +8,23 @@ import Link from 'next/link';
 const caseStudies = [
   {
     title: 'Metropolitan Hospital Group',
-    impact: 'Reduced Diagnostic Anxiety by 84%',
-    summary: 'Implementation of MedCare AI in patient waiting rooms to explain basic report parameters before physician consultation.',
-    metric: '50k+ Patients Served',
+    impact: 'Reduced Diagnostic Anxiety by 90%',
+    summary: 'Implementation of MediCare AI in patient waiting rooms to explain basic report parameters before physician consultation.',
+    metric: '50+ Patients Served',
     color: 'bg-primary'
   },
   {
-    title: 'Rural Health Initiative v2.0',
+    title: 'Rural Health Initiative Programme',
     impact: 'Bridge the Medical Gap in remote zones',
     summary: 'Localized AI analysis of blood reports for health workers in zones with limited specialist availability.',
-    metric: '92% Satisfaction rate',
+    metric: '85% Satisfaction rate',
     color: 'bg-secondary'
   },
   {
     title: 'Elite Health Care Network',
     impact: 'Instant Pre-consultation clarity',
     summary: 'Personalized patient dashboards explaining chronic condition trends like Glucose and BP variations.',
-    metric: 'Digital Health Award 2025',
+    metric: '90% User Satisfaction',
     color: 'bg-indigo-600'
   }
 ];
@@ -37,7 +37,7 @@ export default function CaseStudiesPage() {
            <span className="text-primary font-black   tracking-widest text-sm mb-6 inline-block">Real Impact</span>
            <h1 className="text-7xl md:text-9xl font-black mb-10 leading-none tracking-tighter   italic">Case <span className="text-secondary">Studies</span></h1>
            <p className="text-2xl text-foreground/40 max-w-2xl mx-auto italic font-bold leading-relaxed">
-             How MedCare AI is revolutionizing healthcare accessibility on a global scale.
+             How MediCare AI is revolutionizing healthcare accessibility on a global scale.
            </p>
         </div>
 
@@ -53,7 +53,7 @@ export default function CaseStudiesPage() {
                  <Hospital className="w-20 h-20 text-primary mb-10" />
                  <h2 className="text-5xl font-black tracking-tighter italic   mb-10 leading-tight">Digital Transformation in Hospitals</h2>
                  <p className="text-xl text-foreground/60 leading-relaxed italic mb-12">
-                   Leading medical centers use MedCare AI to bridge the understanding gap between technical clinical assessments and patient experience, ensuring clarity before every consultation.
+                   Leading medical centers use MediCare AI to bridge the understanding gap between technical clinical assessments and patient experience, ensuring clarity before every consultation.
                  </p>
                  <div className="space-y-6">
                     <div className="flex items-center space-x-4">

@@ -26,10 +26,10 @@ export default function AboutPage() {
               <div className="space-y-4">
                  <h2 className="text-2xl font-bold flex items-center space-x-2">
                     <HelpCircle className="w-6 h-6 text-secondary" />
-                    <span>Why MedCare AI?</span>
+                    <span>Why MediCare AI?</span>
                  </h2>
                  <p className="text-foreground/70 leading-relaxed italic">
-                    Medical reports are often filled with jargon that can be confusing and stressful for patients. MedCare AI bridge the gap between technical data and human understanding, providing immediate clarity when it matters most.
+                    Medical reports are often filled with jargon that can be confusing and stressful for patients. MediCare AI bridge the gap between technical data and human understanding, providing immediate clarity when it matters most.
                  </p>
               </div>
            </div>
@@ -49,7 +49,7 @@ export default function AboutPage() {
         <div className="mt-24 p-12 rounded-3xl bg-gray-50 border border-border text-center">
            <h2 className="text-3xl font-bold mb-6">Important Medical Note</h2>
            <p className="text-lg text-foreground/70 max-w-4xl mx-auto leading-relaxed italic">
-              MedCare AI is an information-only tool designed to help you understand your reports better. It is <span className="text-primary font-bold">NOT</span> a replacement for a professional doctor. Artificial intelligence can make mistakes or overlook context that a trained medical professional would see. Always prioritize consultation with your healthcare provider for any diagnosis or treatment plan.
+              MediCare AI is an information-only tool designed to help you understand your reports better. It is <span className="text-primary font-bold">NOT</span> a replacement for a professional doctor. Artificial intelligence can make mistakes or overlook context that a trained medical professional would see. Always prioritize consultation with your healthcare provider for any diagnosis or treatment plan.
            </p>
            <div className="flex items-center justify-center space-x-3 mt-8">
               <ShieldCheck className="w-6 h-6 text-green-600" />

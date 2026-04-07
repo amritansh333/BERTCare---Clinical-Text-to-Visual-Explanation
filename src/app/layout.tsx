@@ -18,7 +18,7 @@ const interTight = Inter_Tight({
 
 export const metadata: Metadata = {
   title: "MediCare-AI",
-  description: "Next-generation diagnostic platform for report synthesis v.4.0",
+  description: "Next-generation diagnostic platform for report synthesis",
 };
 
 export default function RootLayout({

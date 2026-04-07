@@ -12,61 +12,16 @@ export interface AnalysisResult {
 
 export const mockAnalyses: Record<string, AnalysisResult> = {
 
-  tuberculosis: {
-    id: 'tuberculosis',
-    disease: 'Tuberculosis',
-    summary: 'Bacterial infection caused by Mycobacterium tuberculosis primarily manifesting in pulmonary tissue.',
-    symptoms: ['Persistent productive cough', 'Unexplained weight loss', 'Nocturnal diaphoresis', 'Chest discomfort'],
-    medication: [{ name: 'DOTS course', dosage: 'Standardized course' }, { name: 'Ethambutol', dosage: 'Clinical protocol' }],
-    precautions: ['Strict medical adherence', 'Surgical masking', 'Airborne transmission precautions'],
-    videoPath: '/videos/tuberculosis.mp4',
-    imagePath: '/images/tuberculosis.jpg',
-    riskLevel: 'High'
-  },
-
-  diarrhea: {
-    id: 'diarrhea',
-    disease: 'Diarrhea',
-    summary: 'Episodes of frequent, loose, or watery stools generally caused by viral, bacterial, or parasitic infections.',
-    symptoms: ['Frequent loose movements', 'Abdominal cramping', 'Dehydration risk', 'Initial nausea'],
-    medication: [{ name: 'ORS', dosage: 'Ongoing replenishment' }, { name: 'Loperamide', dosage: '2mg following movements' }],
-    precautions: ['Maintain fluid replacement', 'Adopt bland diet', 'Hand hygiene focus'],
-    videoPath: '/videos/diarrhea.mp4',
-    imagePath: '/images/diarrhea.jpg',
-    riskLevel: 'High'
-  },
-  malaria: {
-    id: 'malaria',
-    disease: 'Malaria',
-    summary: 'A parasitic infection transmitted via mosquito vectors, characterized by recurrent high fever and shivering.',
-    symptoms: ['Cyclic high fever', 'Severe chills', 'Acute headache', 'Muscle fatigue'],
-    medication: [{ name: 'ACT Regimen', dosage: 'Clinical schedule' }, { name: 'Chloroquine', dosage: 'Standard course' }],
-    precautions: ['Mosquito netting', 'Protective clothing', 'Chemical repellents'],
-    videoPath: '/videos/malaria.mp4',
-    imagePath: '/images/malaria.jpg',
-    riskLevel: 'High'
-  },
-  sugar: {
-    id: 'sugar',
-    disease: 'Diabetes Mellitus',
-    summary: 'A chronic metabolic disorder resulting in elevated blood glucose levels due to insulin-related complications.',
-    symptoms: ['Polyuria', 'Polydipsia', 'Visual blurring', 'General lethargy'],
-    medication: [{ name: 'Metformin', dosage: '500mg BID' }, { name: 'Insulin Therapy', dosage: 'Titrated units' }],
-    precautions: ['Blood glucose monitoring', 'Controlled dietary intake', 'Consistent physical regimen'],
-    videoPath: '/videos/diabetes.mp4',
-    imagePath: '/images/diabetes.jpg',
+  asthma: {
+    id: 'asthma',
+    disease: 'Bronchial Asthma',
+    summary: 'Chronic inflammatory disorder of the airways resulting in reversible airway obstruction and hyperresponsiveness.',
+    symptoms: ['Expiratory wheeze', 'Paroxysmal dyspnea', 'Thoracic tightness', 'Nocturnal cough'],
+    medication: [{ name: 'SABA Inhaler', dosage: 'As required' }, { name: 'ICS Therapy', dosage: 'Daily maintenance' }],
+    precautions: ['Allergen avoidance', 'Activity modification', 'Peak flow monitoring'],
+    videoPath: '/videos/asthma.mp4',
+    imagePath: '/images/asthma.jpg',
     riskLevel: 'Medium'
-  },
-  fracture: {
-    id: 'fracture',
-    disease: 'Bone Fracture',
-    summary: 'Structural discontinuity of skeletal bone caused by traumatic impact or excessive psychological stress on the bone.',
-    symptoms: ['Intense localized pain', 'Visible edema', 'Structural misalignment', 'Functional loss'],
-    medication: [{ name: 'Analgesics', dosage: 'PRN for pain' }, { name: 'Calcium/Vitamin D', dosage: 'Daily therapeutic' }],
-    precautions: ['Strict immobilization', 'Cryotherapy', 'Non-weight bearing status'],
-    videoPath: '/videos/fracture.mp4',
-    imagePath: '/images/fracture.jpg',
-    riskLevel: 'High'
   },
 
   dengue: {
@@ -80,17 +35,43 @@ export const mockAnalyses: Record<string, AnalysisResult> = {
     imagePath: '/images/dengue.jpg',
     riskLevel: 'Medium'
   },
-  anemia: {
-    id: 'anemia',
-    disease: 'Iron Deficiency Anemia',
-    summary: 'Hematological deficiency characterized by suboptimal red blood cell count or hemoglobin concentration.',
-    symptoms: ['Chronic fatigue', 'Cutaneous pallor', 'Orthostatic dizziness', 'Dyspnea'],
-    medication: [{ name: 'Ferrous Sulfate', dosage: 'Daily elemental iron' }, { name: 'Folate/B12', dosage: 'Dietary supplement' }],
-    precautions: ['High-iron dietary intake', 'Monitoring CBC levels', 'Nutritional optimization'],
-    videoPath: '/videos/anemia.mp4',
-    imagePath: '/images/anemia.jpg',
-    riskLevel: 'Low'
+
+  diabetes: {
+    id: 'diabetes',
+    disease: 'Diabetes Mellitus',
+    summary: 'A chronic metabolic disorder resulting in elevated blood glucose levels due to insulin-related complications.',
+    symptoms: ['Polyuria', 'Polydipsia', 'Visual blurring', 'General lethargy'],
+    medication: [{ name: 'Metformin', dosage: '500mg BID' }, { name: 'Insulin Therapy', dosage: 'Titrated units' }],
+    precautions: ['Blood glucose monitoring', 'Controlled dietary intake', 'Consistent physical regimen'],
+    videoPath: '/videos/diabetes.mp4',
+    imagePath: '/images/diabetes.jpg',
+    riskLevel: 'Medium'
   },
+
+  fracture: {
+    id: 'fracture',
+    disease: 'Bone Fracture',
+    summary: 'Structural discontinuity of skeletal bone caused by traumatic impact or excessive psychological stress on the bone.',
+    symptoms: ['Intense localized pain', 'Visible edema', 'Structural misalignment', 'Functional loss'],
+    medication: [{ name: 'Analgesics', dosage: 'PRN for pain' }, { name: 'Calcium/Vitamin D', dosage: 'Daily therapeutic' }],
+    precautions: ['Strict immobilization', 'Cryotherapy', 'Non-weight bearing status'],
+    videoPath: '/videos/fracture.mp4',
+    imagePath: '/images/fracture.jpg',
+    riskLevel: 'High'
+  },
+
+  heartAttack: {
+  id: 'heart-attack',
+  disease: 'Heart Attack (Myocardial Infarction)',
+  summary: 'A life-threatening condition caused by blockage of blood flow to the heart muscle, leading to tissue damage due to lack of oxygen supply.',
+  symptoms: ['Severe chest pain or pressure', 'Shortness of breath', 'Pain radiating to arm, neck, or jaw', 'Sweating', 'Nausea or dizziness'],
+  medication: [{ name: 'Aspirin', dosage: 'Immediate use during suspected event (as advised)' },{ name: 'Nitroglycerin', dosage: 'As prescribed for chest pain relief' }],
+  precautions: ['Seek immediate medical attention', 'Avoid physical exertion', 'Maintain heart-healthy lifestyle post recovery', 'Regular monitoring and follow-up'],
+  videoPath: '/videos/heart-attack.mp4',
+  imagePath: '/images/heart-attack.jpg',
+  riskLevel: 'High'
+  },
+
   hypertension: {
     id: 'hypertension',
     disease: 'Hypertension',
@@ -102,6 +83,83 @@ export const mockAnalyses: Record<string, AnalysisResult> = {
     imagePath: '/images/hypertension.jpg',
     riskLevel: 'Medium'
   },
+
+  kidneyStone: {
+  id: 'kidney-stone',
+  disease: 'Kidney Stone (Renal Calculi)',
+  summary: 'Formation of hard mineral and salt deposits within the kidneys, which can obstruct urinary flow and cause severe pain.',
+  symptoms: ['Severe flank or lower back pain', 'Pain during urination', 'Blood in urine', 'Nausea and vomiting', 'Frequent urge to urinate'],
+  medication: [{ name: 'Pain Relievers (NSAIDs)', dosage: 'As prescribed for pain management' },{ name: 'Alpha Blockers', dosage: 'To help pass the stone more easily' }],
+  precautions: ['Increase fluid intake', 'Avoid high-sodium and oxalate-rich foods', 'Follow prescribed dietary changes', 'Regular medical check-up'],
+  videoPath: '/videos/kidney-stone.mp4',
+  imagePath: '/images/kidney-stone.jpg',
+  riskLevel: 'Medium'
+  },
+
+  ligamentTear: {
+  id: 'ligament-tear',
+  disease: 'Ligament Tear',
+  summary: 'Injury to the ligament fibers caused by overstretching or sudden joint movement, leading to instability and pain in the affected joint.',
+  symptoms: ['Joint pain', 'Swelling', 'Limited range of motion', 'Joint instability', 'Bruising'],
+  medication: [{ name: 'NSAIDs', dosage: 'As prescribed for pain and inflammation' },{ name: 'Muscle Relaxants', dosage: 'If required for associated muscle stiffness' }],
+  precautions: ['Rest and avoid strain', 'Apply ice packs regularly', 'Use compression and elevation (RICE)', 'Physiotherapy for recovery'],
+  videoPath: '/videos/ligament-tear.mp4',
+  imagePath: '/images/ligament-tear.jpg',
+  riskLevel: 'High'
+  },
+
+  tuberculosis: {
+    id: 'tuberculosis',
+    disease: 'Tuberculosis',
+    summary: 'Bacterial infection caused by Mycobacterium tuberculosis primarily manifesting in pulmonary tissue.',
+    symptoms: ['Persistent productive cough', 'Unexplained weight loss', 'Nocturnal diaphoresis', 'Chest discomfort'],
+    medication: [{ name: 'DOTS course', dosage: 'Standardized course' }, { name: 'Ethambutol', dosage: 'Clinical protocol' }],
+    precautions: ['Strict medical adherence', 'Surgical masking', 'Airborne transmission precautions'],
+    videoPath: '/videos/tuberculosis.mp4',
+    imagePath: '/images/tuberculosis.jpg',
+    riskLevel: 'High'
+  },
+
+
+
+
+  
+  diarrhea: {
+    id: 'diarrhea',
+    disease: 'Diarrhea',
+    summary: 'Episodes of frequent, loose, or watery stools generally caused by viral, bacterial, or parasitic infections.',
+    symptoms: ['Frequent loose movements', 'Abdominal cramping', 'Dehydration risk', 'Initial nausea'],
+    medication: [{ name: 'ORS', dosage: 'Ongoing replenishment' }, { name: 'Loperamide', dosage: '2mg following movements' }],
+    precautions: ['Maintain fluid replacement', 'Adopt bland diet', 'Hand hygiene focus'],
+    videoPath: '/videos/diarrhea.mp4',
+    imagePath: '/images/diarrhea.jpg',
+    riskLevel: 'High'
+  },
+
+  malaria: {
+    id: 'malaria',
+    disease: 'Malaria',
+    summary: 'A parasitic infection transmitted via mosquito vectors, characterized by recurrent high fever and shivering.',
+    symptoms: ['Cyclic high fever', 'Severe chills', 'Acute headache', 'Muscle fatigue'],
+    medication: [{ name: 'ACT Regimen', dosage: 'Clinical schedule' }, { name: 'Chloroquine', dosage: 'Standard course' }],
+    precautions: ['Mosquito netting', 'Protective clothing', 'Chemical repellents'],
+    videoPath: '/videos/malaria.mp4',
+    imagePath: '/images/malaria.jpg',
+    riskLevel: 'High'
+  },
+  
+  anemia: {
+    id: 'anemia',
+    disease: 'Iron Deficiency Anemia',
+    summary: 'Hematological deficiency characterized by suboptimal red blood cell count or hemoglobin concentration.',
+    symptoms: ['Chronic fatigue', 'Cutaneous pallor', 'Orthostatic dizziness', 'Dyspnea'],
+    medication: [{ name: 'Ferrous Sulfate', dosage: 'Daily elemental iron' }, { name: 'Folate/B12', dosage: 'Dietary supplement' }],
+    precautions: ['High-iron dietary intake', 'Monitoring CBC levels', 'Nutritional optimization'],
+    videoPath: '/videos/anemia.mp4',
+    imagePath: '/images/anemia.jpg',
+    riskLevel: 'Low'
+  },
+  
   influenza: {
     id: 'influenza',
     disease: 'Influenza',
@@ -113,6 +171,7 @@ export const mockAnalyses: Record<string, AnalysisResult> = {
     imagePath: '/images/influenza.jpg',
     riskLevel: 'Low'
   },
+
   arthritis: {
     id: 'arthritis',
     disease: 'Arthritis',
@@ -124,17 +183,7 @@ export const mockAnalyses: Record<string, AnalysisResult> = {
     imagePath: '/images/arthritis.jpg',
     riskLevel: 'Medium'
   },
-  asthma: {
-    id: 'asthma',
-    disease: 'Bronchial Asthma',
-    summary: 'Chronic inflammatory disorder of the airways resulting in reversible airway obstruction and hyperresponsiveness.',
-    symptoms: ['Expiratory wheeze', 'Paroxysmal dyspnea', 'Thoracic tightness', 'Nocturnal cough'],
-    medication: [{ name: 'SABA Inhaler', dosage: 'As required' }, { name: 'ICS Therapy', dosage: 'Daily maintenance' }],
-    precautions: ['Allergen avoidance', 'Activity modification', 'Peak flow monitoring'],
-    videoPath: '/videos/asthma.mp4',
-    imagePath: '/images/asthma.jpg',
-    riskLevel: 'Medium'
-  },
+  
   cholera: {
     id: 'cholera',
     disease: 'Cholera',
@@ -146,6 +195,7 @@ export const mockAnalyses: Record<string, AnalysisResult> = {
     imagePath: '/images/cholera.jpg',
     riskLevel: 'High'
   },
+
   migraine: {
     id: 'migraine',
     disease: 'Migraine',
@@ -157,6 +207,7 @@ export const mockAnalyses: Record<string, AnalysisResult> = {
     imagePath: '/images/migraine.jpg',
     riskLevel: 'Low'
   },
+
   pneumonia: {
     id: 'pneumonia',
     disease: 'Pneumonia',
@@ -168,6 +219,7 @@ export const mockAnalyses: Record<string, AnalysisResult> = {
     imagePath: '/images/pneumonia.jpg',
     riskLevel: 'High'
   },
+
   thyroid: {
     id: 'thyroid',
     disease: 'Thyroid Disorder',
